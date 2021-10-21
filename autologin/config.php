@@ -4,24 +4,23 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = 'mariadb';
+$CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'localhost';
-$CFG->dbname    = 'moodle';
-$CFG->dbuser    = 'root';
-$CFG->dbpass    = '';
+$CFG->dbhost    = 'test-server-explico-10152021.cfbpn8gu2e6x.ap-southeast-1.rds.amazonaws.com';
+$CFG->dbname    = 'Moodle_Staging';
+$CFG->dbuser    = 'admin';
+$CFG->dbpass    = 'ChangeMe01#';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => '',
+  'dbport' => 3306,
   'dbsocket' => '',
-  'dbcollation' => 'utf8mb4_unicode_ci',
+  'dbcollation' => 'utf8mb4_0900_ai_ci',
 );
 
-$CFG->wwwroot   = 'http://moodle.localhost.com';
-$CFG->dataroot  = 'D:\\Ritesh\\Projects\\moodledata';
+$CFG->wwwroot   = 'https://staging.elearningcommons.com';
+$CFG->dataroot  = '/var/www/moodledata-staging';
 $CFG->admin     = 'admin';
-$CFG->laravel_site_url = "http://laravelpoc.localhost.com";
 
 $CFG->directorypermissions = 0777;
 
